@@ -3,6 +3,7 @@ node_modules/
 dist/
 
 .DS_Store
+vscode-*.heapsnapshot
 
 package-lock.json
 *.log
