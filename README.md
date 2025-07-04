@@ -1,14 +1,14 @@
 # Markdown Viewer
 
 > [!NOTE]
-> This is a fork of Christian Dreier's [Markdown Viewer](https://github.com/c3er/mdview). It is
+> This is a fork of [Christian Dreier's Markdown Viewer](https://github.com/c3er/mdview). It is
 > intended to add Markdown functionality that extends beyond standard CommonMark and GitHub-flavored Markdown.
 > I'm making these changes to suit a need for extended features not included with the base Markdown Viewer
 > application.
 >
 > Since this version will be implementing features that might not be compatible with many Markdown uses,
-> you may not find this application appropriate for your needs and should stick to the office Markdown Viewer
-> being developed by Christian Dreier.
+> you may not find this application appropriate for your needs and should stick to the
+> official Markdown Viewer being developed by Christian Dreier.
 >
 > **The rest of this README is adapted from Christian Dreier's original to reflect the changes.**
 
