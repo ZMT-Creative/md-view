@@ -55,7 +55,8 @@
     flex-flow: row wrap;
 }
 
-.markdown-body div.flexcolumn, .markdown-body div.flexcol {
+.markdown-body div.flexcolumn,
+.markdown-body div.flexcol {
     flex-flow: column wrap;
     gap: 20px 10px;
 }
@@ -73,7 +74,7 @@
     border: 1px solid rgb(var(--css-color-grayscale80));
 }
 
- .markdown-body pre.hljs:where([label], [language], [nolabel]) > code {
+.markdown-body pre.hljs:where([label], [language], [nolabel]) > code {
     display: block;
     padding-top: 1.5rem;
 }
@@ -83,7 +84,7 @@
     padding-top: inherit;
 }
 
-.markdown-body pre.hljs:where([label],[language],[nolabel])::before {
+.markdown-body pre.hljs:where([label], [language], [nolabel])::before {
     display: block;
     position: absolute;
     text-transform: lowercase;
@@ -102,11 +103,11 @@
     /* border: 1px dotted red; */
 }
 
-.markdown-body pre.hljs[label]:where(:not([language]),:not([nolabel])):has(code)::before {
+.markdown-body pre.hljs[label]:where(:not([language]), :not([nolabel])):has(code)::before {
     content: attr(label);
 }
 
-.markdown-body pre.hljs[language]:where(:not([label]),:not([nolabel])):has(code)::before {
+.markdown-body pre.hljs[language]:where(:not([label]), :not([nolabel])):has(code)::before {
     content: attr(language);
 }
 
