@@ -293,11 +293,20 @@ exports.build = content => {
         .filter(line => Boolean(line))
     let isInCode = false
     const sectionLevels = []
+
+    // Use specific regex pattern test to find headers
+    //   Original 'startsWith("#")' is too broad and also matches
+    //   fancy-lists hash continuation marker, causing ToC to be empty
+    //   due to error when parsing the hash continuation marker
+    const isHeaderPattern = /^#{1,6}(?:\s+.*)?$/
     for (const line of lines) {
         if (line.startsWith("```")) {
             isInCode = !isInCode
         }
-        if (isInCode || !line.startsWith("#")) {
+
+        // Replaced the original 'startsWith("#")' with isHeaderPattern
+        //   regex pattern test
+        if (isInCode || !isHeaderPattern.test(line)) {
             continue
         }
         sectionLevels.push(calcSectionLevel(line))

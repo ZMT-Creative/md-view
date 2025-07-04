@@ -1,0 +1,138 @@
+:root {
+    --border-color: rbg(var(--css-color-grayscale20));
+    --border-width: 1px;
+    --dark-border-color: rgb(var(--css-color-grayscale65));
+    --element-dark-bgcolor: rgb(var(--css-color-grayscale85));
+    --highlight-dark-color: rgb(var(--css-color-grayscale75));
+    --highlight-light-color: rgb(var(--css-color-grayscale15));
+    --shadow-bottom-light: inset 0 -4px 4px -4px rgba(var(--css-color-black), 0.4);
+    --shadow-top-light: inset 0 4px 4px -4px rgba(var(--css-color-black), 0.4);
+    --shadow-bottom-dark: inset 0 -6px 4px -4px rgba(var(--css-color-black), 0.5);
+    --shadow-top-dark: inset 0 6px 4px -4px rgba(var(--css-color-black), 0.5);
+    --status-bar-height: 20px;
+    --strong-highlight-dark-color: rgb(var(--css-color-grayscale50));
+    --strong-highlight-light-color: rgb(var(--css-color-grayscale35));
+    --text-dark-color: rgb(var(--css-color-grayscale5));
+}
+
+.markdown-body p > code {
+    /* padding-left: 0.1em;
+    padding-right: 0.1em; */
+    padding: 0.1em 0.15em;
+    font-size: 100%;
+    line-height: 1.35em;
+}
+
+.markdown-body ol {
+    list-style-type: decimal;
+}
+
+.markdown-body ol.oltype-a {
+    list-style-type: lower-alpha;
+}
+
+.markdown-body ol.oltype-A {
+    list-style-type: upper-alpha;
+}
+
+.markdown-body ol.oltype-i {
+    list-style-type: lower-roman;
+}
+
+.markdown-body ol.oltype-I {
+    list-style-type: upper-roman;
+}
+
+.markdown-body div.flexrow,
+.markdown-body div.flexcolumn,
+.markdown-body div.flexcol {
+    display: flex;
+    gap: 5px 20px;
+    padding: 2px;
+}
+
+.markdown-body div.flexrow {
+    flex-flow: row wrap;
+}
+
+.markdown-body div.flexcolumn, .markdown-body div.flexcol {
+    flex-flow: column wrap;
+    gap: 20px 10px;
+}
+
+.markdown-body .side-by-side,
+.markdown-body .sidebyside,
+.markdown-body .sbs {
+    flex: 0 1 auto;
+    display: block;
+    /* border: 1px solid rgb(var(--css-color-grayscale80)); */
+    border-radius: 0.5rem;
+}
+
+.markdown-body pre.hljs {
+    border: 1px solid rgb(var(--css-color-grayscale80));
+}
+
+ .markdown-body pre.hljs:where([label], [language], [nolabel]) > code {
+    display: block;
+    padding-top: 1.5rem;
+}
+
+.markdown-body pre.hljs {
+    position: relative;
+    padding-top: inherit;
+}
+
+.markdown-body pre.hljs:where([label],[language],[nolabel])::before {
+    display: block;
+    position: absolute;
+    text-transform: lowercase;
+    text-indent: 0.333rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1rem;
+    top: -0.4rem;
+    left: 0px;
+    text-align: left;
+    font-style: italic;
+    width: 100%;
+    padding: 0.1rem 0;
+    color: white;
+    background-color: rgb(var(--css-color-black));
+    /* border: 1px dotted red; */
+}
+
+.markdown-body pre.hljs[label]:where(:not([language]),:not([nolabel])):has(code)::before {
+    content: attr(label);
+}
+
+.markdown-body pre.hljs[language]:where(:not([label]),:not([nolabel])):has(code)::before {
+    content: attr(language);
+}
+
+.markdown-body pre.hljs:not([label]):where(:not([language])):has(code)::before,
+.markdown-body pre.hljs[nolabel]:has(code)::before {
+    content: "";
+}
+
+.markdown-body pre.hljs[minwidth]:has(code) {
+    --zmtc-pre-minwidth: attr(minwidth %);
+    min-width: var(--zmtc-pre-minwidth);
+}
+
+.markdown-body pre.hljs[maxwidth]:has(code) {
+    --zmtc-pre-maxwidth: attr(maxwidth %);
+    max-width: var(--zmtc-pre-maxwidth);
+}
+
+.markdown-body pre.hljs[minwidth] > code {
+    min-width: var(--zmtc-pre-minwidth);
+}
+
+.markdown-body pre.hljs[maxwidth] > code {
+    max-width: var(--zmtc-pre-maxwidth);
+}
+
+details {
+    margin-bottom: 1em;
+}
