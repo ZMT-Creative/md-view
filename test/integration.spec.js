@@ -467,7 +467,7 @@ describe("Integration tests with their own app instance each", () => {
             // quite some time.
 
             const contentLocator = _page.locator(
-                `${mocking.elements.content.path} > p:first-of-type`,
+                `${mocking.elements.content.path} > section:first-of-type`,
             )
             const orig = await contentLocator.boundingBox()
 
@@ -616,7 +616,7 @@ describe("Integration tests with their own app instance each", () => {
     describe("Keyboard handling", () => {
         it("has focus on content", async () => {
             const contentLocator = _page.locator(
-                `${mocking.elements.content.path} > p:first-of-type`,
+                `${mocking.elements.content.path} > section:first-of-type`,
             )
 
             const orig = await contentLocator.boundingBox()
