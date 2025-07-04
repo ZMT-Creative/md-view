@@ -22,7 +22,7 @@ exports.open = () => {
             "..",
             "assets",
             "icon",
-            common.isMacOS() ? "md-mac-icon.svg" : "md-icon.svg",
+            common.isMacOS() ? "mdx-mac-icon.svg" : "mdx-win-icon.svg",
         ),
         applicationName: common.APPLICATION_NAME,
         applicationDescription: packageInfo.description,
