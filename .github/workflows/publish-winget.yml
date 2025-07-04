@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: vedantmgoyal2009/winget-releaser@v2
         with:
-          identifier: c3er.mdview
+          identifier: zmt-creative.md-view
           installers-regex: '\.exe$'
           token: ${{ secrets.WINGET_TOKEN }}

@@ -232,7 +232,7 @@ exports.elements = {
     mainMenu: {
         application: common.isMacOS()
             ? {
-                  label: "mdview",
+                  label: "md-view",
                   sub: {
                       about: {
                           label: "&About",

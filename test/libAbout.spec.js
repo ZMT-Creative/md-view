@@ -53,7 +53,7 @@ describe("About dialog", () => {
                 {},
                 {
                     applicationIconPath: "path/to/icon",
-                    applicationName: "mdview",
+                    applicationName: "md-view",
                     applicationDescription: "Some description",
                     applicationVersion: "0.0.0",
                     homepage: "example.com",

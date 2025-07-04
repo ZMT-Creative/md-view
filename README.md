@@ -42,7 +42,7 @@ The Windows setup file supports following parameters:
 The application can be installed via [Scoop](https://scoop.sh/):
 
 ```powershell
-scoop install https://github.com/ZMT-Creative/md-view/releases/latest/download/mdview.json
+scoop install https://github.com/ZMT-Creative/md-view/releases/latest/download/md-view.json
 ```
 
 ## Known issues
@@ -57,10 +57,10 @@ I don't know yet, how to prevent these blockings without paying an annual fee.
 
 The application may have a delay at startup. This delay may be caused by Windows Defender. See [my comment in Electron issue #29868](https://github.com/electron/electron/issues/29868#issuecomment-869049066) and [this StackOverflow question](https://stackoverflow.com/questions/67982430/windows-defender-slowing-down-electron-startup). Other virus scanner may also cause a delay.
 
-As a workaround to remove this delay, you can add the path to the `mdview.exe` to the exclusion list of your virus scanner. The default installation path of the setup file are:
+As a workaround to remove this delay, you can add the path to the `md-view.exe` to the exclusion list of your virus scanner. The default installation path of the setup file are:
 
-- `C:\Program Files\mdview` for system wide installation
-- `%appdata%\..\Local\Programs\mdview` for installation in the user account (non elevated)
+- `C:\Program Files\md-view` for system wide installation
+- `%appdata%\..\Local\Programs\md-view` for installation in the user account (non elevated)
 
 ### Build error ERR_ELECTRON_BUILDER_CANNOT_EXECUTE (development)
 

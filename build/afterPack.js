@@ -27,7 +27,7 @@ exports.default = async context => {
     const LOCALE_TO_KEEP = "en-US.pak"
 
     const MAC_RESOURCE_DIR =
-        "mdview.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources"
+        "md-view.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources"
     const MAC_RESOURCES_TO_KEEP = [
         "Info.plist",
         "MainMenu.nib",
@@ -54,7 +54,7 @@ exports.default = async context => {
         linux: [], // XXX Propr Linux box needed
         darwin: [
             {
-                dir: "mdview.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries",
+                dir: "md-view.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries",
                 files: ["libvk_swiftshader.dylib", "vk_swiftshader_icd.json"],
             },
         ],
