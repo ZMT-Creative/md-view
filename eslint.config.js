@@ -13,7 +13,12 @@ module.exports = [
             "no-unreachable-loop": "error",
             "no-unused-expressions": "error",
             "no-unused-private-class-members": "error",
-            "no-unused-vars": "error",
+            "no-unused-vars": [
+                "error",
+                {
+                    caughtErrors: "none",
+                },
+            ],
             "no-useless-constructor": "error",
             "no-var": "error",
             "one-var": ["error", "never"],
