@@ -70,6 +70,7 @@ exports.reset = options => {
             else if (lang && hljs.getLanguage(lang)) {
                 try {
                     return hljs.highlight(str, { language: lang, ignoreIllegals: true }).value
+                // eslint-disable-next-line no-unused-vars
                 } catch (__) {}
             }
 
