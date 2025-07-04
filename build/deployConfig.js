@@ -1,7 +1,7 @@
 const APPLICATION_NAME = "Markdown Viewer"
 const APPLICATION_SHORTNAME = "md-view"
-const WIN_ICON = "app/assets/icon/md.ico"
-const MAC_ICON = "app/assets/icon/md.icns"
+const WIN_ICON = "app/assets/icon/mdx.ico"
+const MAC_ICON = "app/assets/icon/mdx.icns"
 
 module.exports = {
     productName: APPLICATION_NAME,
