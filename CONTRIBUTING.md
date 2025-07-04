@@ -1,9 +1,17 @@
 # Contributing to Markdown Viewer
 
-Notes:
+> [!IMPORTANT]
+> **This** repository code is a fork of the original. ZMT-Creative is **NOT** currently accepting
+> outside Contributions, Feature Requests or Pull-Requests to this forked version. If you would
+> like to contribute to the original [Markdown Viewer](https://github.com/c3er/mdview), refer
+> to the [CONTRIBUTING](https://github.com/c3er/mdview/blob/master/CONTRIBUTING.md) document on
+> the original site.
 
-- Markdown Viewer is referred to as "the tool" below.
-- The project maintainer is referred to as "the author" below
+<!-- COMMENT OUT ORIGINAL CONTRIBUTING.md
+
+> [!NOTE]
+> - Markdown Viewer is referred to as "the tool" below.
+> - The project maintainer is referred to as "the author" below
 
 ## Bugs and feature requests
 
@@ -114,3 +122,5 @@ The integration tests cannot be debugged currently, i.e. one can only work with 
 You may encounter some issue when trying to build the Electron distribution i.e. the build may (partially) fail. A possible fix is described here [not able to build installer/uninstaller (ERR_ELECTRON_BUILDER_CANNOT_EXECUTE)](doc/development-build-installer-issue.md)
 
 See [section Startup speed in the README](README.md#startup-speed) for known delays under Windows. If you observe a big delay at application startup, you should add the  development path of the application to your virus scanner exclusion list. This workaround may also help with other Electron applications.
+
+-->
