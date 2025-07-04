@@ -412,7 +412,7 @@ exports.elements = {
                 path: "#system-theme",
             },
             lightThemeRadioButton: {
-                path: "#system-theme",
+                path: "#light-theme",
             },
             darkThemeRadioButton: {
                 path: "#dark-theme",
