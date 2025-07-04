@@ -28,7 +28,7 @@
     "lint": "eslint . --max-warnings 0; prettier --check .",
     "test": "mocha --exclude **/integration*",
     "test-int": "mocha --timeout 20000",
-    "test-all": "eslint . --max-warnings 0 && prettier --check . && mocha --timeout 20000",
+    "test-all": "eslint . --max-warnings 0 && mocha --timeout 20000",
     "format": "prettier --write .",
     "fix": "eslint . --fix; prettier --write ."
   },
@@ -42,7 +42,7 @@
     "markdown-it": "14.1.0",
     "markdown-it-abbr": "2.0.0",
     "markdown-it-anchor": "9.2.0",
-    "markdown-it-attrs": "4.3.1",
+    "markdown-it-attrs": "4.2.0",
     "markdown-it-bracketed-spans": "1.0.1",
     "markdown-it-obsidian-callouts": "0.3.2",
     "markdown-it-collapsible": "2.0.2",
