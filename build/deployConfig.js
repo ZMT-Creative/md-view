@@ -1,5 +1,5 @@
 const APPLICATION_NAME = "Markdown Viewer"
-const APPLICATION_SHORTNAME = "mdview"
+const APPLICATION_SHORTNAME = "md-view"
 const WIN_ICON = "app/assets/icon/md.ico"
 const MAC_ICON = "app/assets/icon/md.icns"
 

@@ -62,7 +62,7 @@ async function createChecksumFiles(artifactPaths) {
 
 async function createScoopManifest(outDir, artifacts) {
     const MANIFEST_TEMPLAE_PATH = "build/scoop-manifest.template.json"
-    const MANIFEST_NAME = "mdview.json"
+    const MANIFEST_NAME = "md-view.json"
     const INDENTATION = 4
 
     const zipArtifact = artifacts.find(artifact => artifact.path.toLowerCase().endsWith(".zip"))
