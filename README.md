@@ -41,7 +41,7 @@ The Windows setup file supports following parameters:
 
 The application can be installed via [Scoop](https://scoop.sh/):
 
-```
+```powershell
 scoop install https://github.com/ZMT-Creative/md-view/releases/latest/download/mdview.json
 ```
 
