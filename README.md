@@ -1,5 +1,17 @@
 # Markdown Viewer
 
+> [!NOTE]
+> This is a fork of Christian Dreier's [Markdown Viewer](https://github.com/c3er/mdview). It is
+> intended to add Markdown functionality that extends beyond standard CommonMark and GitHub-flavored Markdown.
+> I'm making these changes to suit a need for extended features not included with the base Markdown Viewer
+> application.
+>
+> Since this version will be implementing features that might not be compatible with many Markdown uses,
+> you may not find this application appropriate for your needs and should stick to the office Markdown Viewer
+> being developed by Christian Dreier.
+>
+> **The rest of this README is adapted from Christian Dreier's original to reflect the changes.**
+
 ![Screenshot of the application in light mode](doc/assets/screenshot-light.png)
 
 ![Screenshot of the application in dark mode](doc/assets/screenshot-dark.png)
@@ -10,13 +22,13 @@ See [the flavor documentation](doc/flavor.md) for Markdown features additional t
 
 ## Installation and usage
 
-You find the latest binaries and setup file [at GitHub](https://github.com/c3er/mdview/releases/latest). 
+You find the latest binaries and setup file [at GitHub](https://github.com/ZMT-Creative/md-view/releases/latest).
 
 Package formats:
 
 - **Windows:** Setup-exe, ZIP archive
-- **Linux:** AppImage package
-- **macOS:** DMG package
+<!-- - **Linux:** AppImage package
+- **macOS:** DMG package -->
 
 ### Windows
 
@@ -25,20 +37,12 @@ The Windows setup file supports following parameters:
 - `/S` runs the setup silently, i.e. in the background, without UI and without asking any questions.
 - `/D=C:\path\to\install` sets the installation directory. This parameter has to be the last one. The path must not contain quotes, even if the path contains whitespaces.
 
-#### winget
-
-The application can be installed via [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
-
-```
-winget install c3er.mdview
-```
-
 #### Scoop
 
 The application can be installed via [Scoop](https://scoop.sh/):
 
 ```
-scoop install https://github.com/c3er/mdview/releases/latest/download/mdview.json
+scoop install https://github.com/ZMT-Creative/md-view/releases/latest/download/mdview.json
 ```
 
 ## Known issues
@@ -70,10 +74,10 @@ See the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 ## Copyright and License
 
-This tool is made by Christian Dreier. If you find a copy somewhere, you find the original at [GitHub](https://github.com/c3er/mdview).
+The original Markdown Viewer (v3.2.0 and earlier) is made by Christian Dreier. If you find a copy somewhere, you can find the original at [GitHub](https://github.com/c3er/mdview).
 
 You can use and copy this tool under the conditions of the MIT license.
 
 ## Further notes
 
-There is [a fork of this project](https://github.com/khatastroffik/mdview) by [Loïs Bégué](https://github.com/khatastroffik).
+There is [a fork of this project](https://github.com/ZMT-Creative/md-view) by [ZMT-Creative](https://github.com/ZMT-Creative).
