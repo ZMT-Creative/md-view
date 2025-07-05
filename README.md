@@ -27,11 +27,11 @@ You find the latest binaries and setup file [at GitHub](https://github.com/ZMT-C
 Package formats:
 
 > [!NOTE]
-> Currently only providing releases for Windows in this repository.
+> Currently only providing releases for Windows and Linux in this repository (I don't have access to a Mac).
 
 - **Windows:** Setup-exe, ZIP archive
-<!-- - **Linux:** AppImage package
-- **macOS:** DMG package -->
+- **Linux:** AppImage package
+<!-- - **macOS:** DMG package -->
 
 ### Windows
 
