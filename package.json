@@ -24,6 +24,7 @@
     "postinstall": "install-app-deps",
     "start": "electron .",
     "dist": "electron-builder --config build/deployConfig.js",
+    "dist-arm64": "electron-builder --arm64 --config build/deployConfig.js",
     "dist-ci": "electron-builder -p never --config build/deployConfig.js",
     "lint": "eslint . --max-warnings 0",
     "test": "mocha --exclude **/integration*",
